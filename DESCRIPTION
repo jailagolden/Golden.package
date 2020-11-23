@@ -1,14 +1,14 @@
 Package: Golden.package
-Title: Acquire genetic datafiles
+Title: Map organisms in the World map. 
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Jaila",
            family = "Golden",
            role = c("aut", "cre"),
            email = "jaila.golden@selu.edu")
-Description: Obtain .fasta file from NCBI and convert to .nexus. Also, plot the specimens in the map.
+Description:Plot the specimens in the map and obtain fasta files. 
 Depends:
-  R (>= 3.0.0)
+  R (>= 4.0.0)
 Imports:
   tidyverse, leaflet, rotl ,rgbif, assertthat, ggplot2, testthat
 Suggests:
