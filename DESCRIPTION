@@ -1,0 +1,20 @@
+Package: Golden.package
+Title: Acquire genetic datafiles
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Jaila",
+           family = "Golden",
+           role = c("aut", "cre"),
+           email = "jaila.golden@selu.edu")
+Description: Obtain .fasta file from NCBI and convert to .nexus. Also, plot the specimens in the map.
+Depends:
+  R (>= 3.0.0)
+Imports:
+  tidyverse, leaflet, rotl ,rgbif, assertthat, ggplot2, testthat
+Suggests:
+  knitr, rmarkdown, testthat
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
