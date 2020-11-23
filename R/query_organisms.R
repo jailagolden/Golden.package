@@ -1,17 +1,17 @@
 #' query the desired organisms
 #' 
 #' 
-penguins <- c("Eudyptes chrysolophus", "Eudyptes filholi", "Eudyptes chrysocome", "Eudyptes moseleyi", "Eudyptes pachyrhynchus")
 
-ids <-c()
-for (penguin in penguins){
-  print(penguin)
-  raw <- name_suggest(penguin)
-  print(raw)
-  ids[penguin] <- c(raw$key)
-}
+ants <- c("Pheidole")
+ids <- c()
+raw <- name_suggest(ants)
 
-pen_occurrences <- lapply(ids, occ_search, return = "data")
+ids[ants] <- c(raw$data$key)
 
 
-mega_pen <- bind_rows(pen_occurrences, .id = "column_labels")
+ant_occurrences <- lapply(ids, occ_data)
+
+just_data <- ant_occurrences[[ants]]$data %>%
+select(scientificName, decimalLatitude, decimalLongitude) %>%
+drop_na()
+
