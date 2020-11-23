@@ -1,3 +1,10 @@
+#' Visualize the organisms queried.
+#' 
+#' @param just_data dataframe with the latitudes and longitudes of occurences of the organism 
+#' 
+#'  
+#' @export
+#' 
 
 visualize_taxa <- function(just_data) {
   mega_taxafilt <- select(just_data, scientificName, decimalLatitude, decimalLongitude)
@@ -6,7 +13,7 @@ visualize_taxa <- function(just_data) {
     mutate(n_areas = n()) %>% 
     leaflet() %>% 
     addTiles() %>% 
-    addCircleMarkers(~decimalLongitude, ~decimalLatitude, color = c("red"))
+    addCircleMarkers(~decimalLongitude, ~decimalLatitude, radius = ~n_areas, color = c("red"))
   mega_taxavis
 }
 
