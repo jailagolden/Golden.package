@@ -1,0 +1,3 @@
+* Age and taxonomy information for ant fossil specimens from the Paleobiology Database
+* Dimensions: 789 rows by 8 columns
+Columns: taxon = col_character(), reference_no = col_double(), subfamily = col_character(), Tribe = col_character(), Genus = col_character(), Fossil = col_character(), min_mx = col_character(), Notes = col_character()

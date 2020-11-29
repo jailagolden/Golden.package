@@ -10,7 +10,7 @@ Description:Plot the specimens in the map and obtain fasta files.
 Depends:
   R (>= 4.0.0)
 Imports:
-  tidyverse, leaflet, rotl ,rgbif, assertthat, ggplot2, testthat
+  tidyverse, leaflet, rotl ,rgbif, assertthat, ggplot2, rentrez
 Suggests:
   knitr, rmarkdown, testthat
 License: MIT

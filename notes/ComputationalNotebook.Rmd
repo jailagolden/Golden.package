@@ -1,0 +1,50 @@
+---
+title: "Computational Lab Notebook"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Sept. 23, 2020
+
+*Goal:* Plot number of specimens by age.
+
+*Worked:*
+```{r}
+ant_data <-  read_csv("wright/data/FossilAnts.csv")
+sepped <- ant_data %>%
+  separate(min_mx, c("min_age", "max_age"), "_")
+
+ggplot(sepped) + geom_bar(aes(y = min_age))
+```
+
+
+
+*Did Not Work:* 
+
+* Must not name `min` or `max` because R will think you're calling `min()` and `max()` functions
+* Can't make a barplot from group_by       
+
+
+## October 5 
+
+Trying revision management for the first time. 
+
+-[ x ] First push worked
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

@@ -18,3 +18,4 @@ visualize_taxa <- function(just_data) {
 }
 
 visualize_taxa(just_data)
+
