@@ -1,4 +1,4 @@
-#' Obtain .fasta files from NCBI database (Function 2)
+#' Obtain .fasta files from NCBI database
 #' 
 #' 
 #' You have to perform a search in the NCBI database before you execute the function. The search results are stored in a  list. 
@@ -11,6 +11,8 @@
 #' @param genus_ids is the ids that were obtained using entrez_search 
 #' 
 #' @return the  fasta sequence from the database 
+#' 
+#' @export
 #' 
 fasta  <- function(genus){
   genus_ids <- search$ids

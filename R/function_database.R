@@ -17,7 +17,6 @@ calc_shrub_vol <- function(length = 1, width = 1, height = 1){
 
 #' @param volume (numeric)
 #' @return mass of shrub (numeric)
-#' @example
 #' calc_shrub_mass(3.5)
 
 calc_shrub_mass <- function(volume){
