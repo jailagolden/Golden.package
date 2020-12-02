@@ -1,0 +1,32 @@
+---
+title: "Obtain fasta files"
+author: "Jaila Golden"
+date: "12/2/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+This function obtains fasta files from the NCBI database. 
+
+To use it first you have to perform a search from the database before you execute the function. The search results are then stored in a list.
+You might want to login to your NCBI account and obtain the api key. You can follow https://www.ncbi.nlm.nih.gov/account/settings/ this link and it should be under API management. 
+Instead of "genus" you can use any genus to obtain the fasta files. 
+
+```{r, eval=FALSE}
+search <-  entrez_search(db = "Nucleotide", term="genus", retmax = 100, api_key ="669d671ec088301f59dc01dd767127db2508")
+```
+
+
+Then, to obtain the fasta files just use the following command.
+
+```{r, eval=FALSE}
+fasta(Quela)
+```
+
+The downloaded fasta files will be present in the root of the working directory as genus.fasta file.This can be used for any further analyses.  
+
+
+
+

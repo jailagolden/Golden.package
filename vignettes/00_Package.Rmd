@@ -1,5 +1,5 @@
 ---
-title: "Tutorial"
+title: "Setup and Query Organisms"
 author: "Jaila Golden"
 date: "11/29/2020"
 output: html_document
@@ -17,7 +17,7 @@ devtools::install_github("jailagolden/Golden.package")
 
 Now, load the package...
 
-```{r, echo=FALSE}
+```{r, eval=FALSE}
 library(Golden.package)
 ```
 
@@ -29,9 +29,12 @@ You could use this to obtain information about where the Red-Billed Quelea is fo
 It uses rgbif package to obtain the taxon key for the bird and will get the occurences of the bird. It will clear any data without a specific geographical location value. The function will save the data into a dataframe. 
 I was trying to make the user input the organism's scientific name but got some trouble doing so in this function. So, the only organism you could search for is the Red-Billed Quelea. I chose this as it is available all over Africa and has a lot of data.
 
-_Organism's Name: Quela quela_
-_Taxon Key: 2493987_
+Organism's Name:_"Quela quela"_
+
+Taxon Key: 2493987
 
 ```{r, eval=FALSE}
 Organism()
+```
+
 

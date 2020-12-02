@@ -1,0 +1,17 @@
+---
+title: "Visualize Organisms"
+author: "Jaila Golden"
+date: "12/2/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+This function just takes the GPS coordinates from the dataframe and plots it in the map of the world. 
+This could be useful in getting a knowlegde about the geographical distribution of the organism someone is researching on. 
+
+To use the function, you just type 
+```{r, eval=FALSE}
+visualize_taxa("just_data")
+```

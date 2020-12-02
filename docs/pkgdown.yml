@@ -3,5 +3,7 @@ pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   00_Package: 00_Package.html
-last_built: 2020-11-30T02:59Z
+  01_Visualizing Organisms: 01_Visualizing Organisms.html
+  03_Obtaining fasta files: 03_Obtaining fasta files.html
+last_built: 2020-12-02T21:56Z
 
