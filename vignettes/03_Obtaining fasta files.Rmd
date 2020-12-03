@@ -15,14 +15,14 @@ You might want to login to your NCBI account and obtain the api key. You can fol
 Instead of "genus" you can use any genus to obtain the fasta files. 
 
 ```{r, eval=FALSE}
-search <-  entrez_search(db = "Nucleotide", term="genus", retmax = 100, api_key ="669d671ec088301f59dc01dd767127db2508")
+search <-  entrez_search(db = "Nucleotide", term="Quelea", retmax = 100, api_key ="669d671ec088301f59dc01dd767127db2508")
 ```
 
 
 Then, to obtain the fasta files just use the following command.
 
 ```{r, eval=FALSE}
-fasta(Quela)
+fasta("Quelea")
 ```
 
 The downloaded fasta files will be present in the root of the working directory as genus.fasta file.This can be used for any further analyses.  

@@ -1,6 +1,6 @@
 #' @title Visualize the organisms queried.
 #' 
-#'  just_datadataframe with the latitudes and longitudes of occurences of the organism 
+#' @param  just_data dataframe with the latitudes and longitudes of occurences of the organism 
 #' 
 #'  @return mega_taxavis the plot of the locations of the organism.
 #' 
@@ -9,7 +9,7 @@
 
 library(leaflet)
 
-visualize_taxa <- function(just_data) {
+ visualize_taxa <- function(just_data) {
   mega_taxafilt <- select(just_data, scientificName, decimalLatitude, decimalLongitude)
   mega_taxavis <-mega_taxafilt %>%
     group_by(decimalLatitude) %>% 
@@ -20,5 +20,5 @@ visualize_taxa <- function(just_data) {
   return(mega_taxavis)
 }
 
-visualize_taxa(just_data)
+
 
